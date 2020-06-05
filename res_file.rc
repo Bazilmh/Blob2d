@@ -1,0 +1,60 @@
+#include <windows.h>
+#include "ident.h"
+
+M3D_MENU MENU
+BEGIN
+
+POPUP "File"
+BEGIN
+MENUITEM "Insert equation", 2002
+END
+
+POPUP "Help"
+BEGIN
+MENUITEM "About", 2003
+END
+
+
+
+
+
+END
+
+//DIALOG BOX - 4
+M3D_DIA_004 DIALOGEX 0, 0, 200, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "Microsoft Sans Serif"
+
+BEGIN
+
+
+CTEXT "--CREDITS--\n\nSpecial Thanks to\nAllah Almighty\n\nProgrammed By\nAMB786\nSuggestions? improvements? mail me at imamb1077@gmail.com",1040,10,10,180,100
+
+
+
+
+PUSHBUTTON "OK",1049,168,81,20,10
+GROUPBOX "About",1045,5,5,187,90
+END
+
+//DIALOG BOX - 5
+M3D_DIA_005 DIALOGEX 0, 0, 200, 100
+STYLE  WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Equation"
+FONT 9, "Microsoft Sans Serif"
+
+BEGIN
+
+
+EDITTEXT 1050,30,35,150,10
+
+
+CTEXT "f(x) = ",1051,10,35,20,10
+CTEXT "",1056,30,50,150,10
+PUSHBUTTON "<< Prev eqn.",1052,75,69,50,10
+PUSHBUTTON "Add eqn.",1053,75,81,50,10
+GROUPBOX "Enter an equation",1054,5,5,187,90
+PUSHBUTTON "Next eqn. >>",1055,128,69,50,10
+PUSHBUTTON "Remove eqn.",1057,128,81,50,10
+END

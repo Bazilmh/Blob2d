@@ -1,0 +1,15 @@
+#include <windows.h>
+#include "res.h"
+
+786 MENU
+BEGIN
+POPUP "&File"
+BEGIN
+MENUITEM "E&xit", 787
+END
+POPUP "&Stuff"
+BEGIN
+MENUITEM "&Go", 788
+MENUITEM "G&o somewhere else", 0, GRAYED
+END
+END
